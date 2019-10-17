@@ -134,7 +134,7 @@ if ( ! class_exists( 'KP_Shortcodes' ) ) {
 			load_plugin_textdomain(
 				'kp-shortcodes',
 				false,
-				KP_SHORTCODES_PLUGIN_FILE . '/languages/'
+				KP_SHORTCODES_PLUGIN_DIR . '/languages/'
 			);
 
 		}
