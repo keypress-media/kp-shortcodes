@@ -4,7 +4,7 @@
  * @wordpress-plugin
  * Plugin Name:       KeyPress Shortcodes
  * Plugin URI:        https://github.com/keypress-media/kp-shortcodes
- * Description:       Adds extra shortcodes to your WaaS.
+ * Description:       Adds extra shortcodes to your multisite.
  * Version:           1.0.0
  * Author:            KeyPress Media LLC
  * Author URI:        https://getkeypress.com
