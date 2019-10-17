@@ -29,4 +29,5 @@ if ( ! defined( 'KP_SHORTCODES_PLUGIN_DIR' ) ) {
 	define( 'KP_SHORTCODES_PLUGIN_DIR', plugin_dir_path( KP_SHORTCODES_PLUGIN_FILE ) );
 }
 
+// Require the core class that executes the plugin.
 require_once KP_SHORTCODES_PLUGIN_DIR . 'includes/class-kp-shortcodes.php';
