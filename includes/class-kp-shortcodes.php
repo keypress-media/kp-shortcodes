@@ -53,16 +53,16 @@ if ( ! class_exists( 'KP_Shortcodes' ) ) {
 		public function register_shortcodes() {
 
 			$shortcodes = array(
-				'kp-site-id',
-				'kp-site-name',
-				'kp-site-tagline',
-				'kp-site-url',
-				'kp-admin-email',
-				'kp-main-id',
-				'kp-main-name',
-				'kp-main-tagline',
-				'kp-main-url',
-				'kp-main-admin-email'
+				'kp_site_id',
+				'kp_site_name',
+				'kp_site_tagline',
+				'kp_site_url',
+				'kp_admin_email',
+				'kp_main_id',
+				'kp_main_name',
+				'kp_main_tagline',
+				'kp_main_url',
+				'kp_main_admin_email'
 			);
 
 			foreach ( $shortcodes as $shortcode_tag ) {
@@ -86,37 +86,37 @@ if ( ! class_exists( 'KP_Shortcodes' ) ) {
 			$text = isset( $atts['default'] ) ? $atts['default'] : '';
 
 			switch( $shortcode_tag ) {
-				case 'kp-site-id':
+				case 'kp_site_id':
 					$current_site = get_site( get_current_blog_id() );
 					$text = $current_site->__get( 'id' );
 					break;
-				case 'kp-site-name':
+				case 'kp_site_name':
 					$text = get_bloginfo( 'name' );
 					break;
-				case 'kp-site-tagline':
+				case 'kp_site_tagline':
 					$text = get_bloginfo( 'description' );
 					break;
-				case 'kp-site-url':
+				case 'kp_site_url':
 					$text = get_bloginfo( 'url' );
 					break;
-				case 'kp-admin-email':
+				case 'kp_admin_email':
 					$text = get_bloginfo( 'admin_email' );
 					break;
-				case 'kp-main-id':
+				case 'kp_main_id':
 					$text = get_main_site_id();
 					break;
-				case 'kp-main-name':
+				case 'kp_main_name':
 					$text = $this->get_main_site_info( 'name' );
 					break;
 
-				case 'kp-main-tagline':
+				case 'kp_main_tagline':
 					$text = $this->get_main_site_info( 'description' );
 					break;
 
-				case 'kp-main-url':
+				case 'kp_main_url':
 					$text = network_site_url( '/' );
 					break;
-				case 'kp-main-admin-email':
+				case 'kp_main_admin_email':
 					$text = $this->get_main_site_info( 'admin_email' );
 					break;
 			}
