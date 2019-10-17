@@ -1,4 +1,4 @@
-=== KP Shortcodes ===
+=== KeyPress Shortcodes ===
 
 Author URI: https://getkeypress.com/
 Plugin URI: https://github.com/keypress-media/kp-shortcodes
